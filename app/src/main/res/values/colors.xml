@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <item name="explored_space" type="color">#d2d2d2</item>
+    <item name="furniture" type="color">#15A6D9</item>
+    <item name="user_marker" type="color">#be6A2875</item>
+
+    <color name="colorPrimary1">#3FF1B5</color>
+    <color name="colorPrimary2">#3F4154</color>
+    <color name="colorPrimary3">#9F54FF</color>
+    <color name="colorPrimary4">#F8FFB4</color>
+
+    <color name="divide_bg">#b2b2b2</color>
+    <color name="list_background">#F2F2F2</color>
+</resources>

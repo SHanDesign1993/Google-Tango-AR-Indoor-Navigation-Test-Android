@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:labelFor="@string/app_name"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/load_adf"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textOff="@string/load_adf_off"
+            android:textOn="@string/load_adf_on"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/buildings"
+            android:textColor="@android:color/black"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/uuid"
+            android:textColor="@android:color/black"
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/learning_mode"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textOff="@string/learning_mode_off"
+        android:textOn="@string/learning_mode_on"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_bg"
+        android:layout_below="@+id/learning_mode"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_navigation"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/reconstructionView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reconstruction"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/point_reconstructionView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/point_reconstruction"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_bg"
+        android:layout_below="@+id/point_reconstructionView"/>
+
+    <Button
+    android:id="@+id/AdfListView"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:text="@string/manage_adfs"
+    android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/building_view"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_building"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_bg"
+        android:layout_below="@+id/building_view"/>
+
+    <Button
+        android:id="@+id/configuration"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/configuration"
+        android:textSize="15sp" />
+
+</LinearLayout>

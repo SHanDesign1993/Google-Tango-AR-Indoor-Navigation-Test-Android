@@ -1,0 +1,3 @@
+include ':app'
+include ':tango_utils'
+project(':tango_utils').projectDir = new File('./modules/tango_utils/app')

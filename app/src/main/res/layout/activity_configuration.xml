@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ToggleButton
+        android:id="@+id/enable_grid"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textOff="@string/grid_off"
+        android:textOn="@string/grid_on"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_bg"
+        android:layout_below="@+id/enable_grid"
+        android:id="@+id/view1" />
+
+    <TextView
+        android:id="@+id/txt0"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Don't change below data!!!!"
+        android:layout_below="@+id/view1"/>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Guad tree start"
+        android:layout_below="@+id/txt0"/>
+
+    <EditText
+        android:id="@+id/txt_quad_tree_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="120"
+        android:inputType="number"
+        android:layout_below="@+id/txt0"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Guad tree range"
+        android:layout_below="@+id/txt1"/>
+
+    <EditText
+        android:id="@+id/txt_quad_tree_range"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="240"
+        android:inputType="number"
+        android:layout_below="@+id/txt_quad_tree_start"
+        android:layout_marginLeft="100dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_bg"
+        android:layout_below="@+id/txt_quad_tree_range"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Navigation point detection distance"
+        android:layout_below="@+id/view2"/>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Indoor : 1.0 ~ 1.5, Outdoor : 2.0 ~ 2.5"
+        android:layout_below="@+id/txt3"/>
+
+    <EditText
+        android:id="@+id/txt_detect_distance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="120"
+        android:layout_below="@+id/txt4"/>
+
+</RelativeLayout>
